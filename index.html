@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PyCity website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="PY">
+  PyCity
+  </div>
+<div class="topnav" id="navbar">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#how" class="How">How to play?</a>
+  <a href="#downloads">Downloads</a>
+</div>
+  <div id="home">
+    <h1 class="Home">Home</h1>
+    <h3>PyCity is open source free city building game<h3>
+     <h3>On this website we will publish updates in news,you can download game
+       <br>
+     from downloads,and game instructions are in How to play? section</h3>
+      <br>
+  </div>
+      <hr>
+
+     <br>
+     <br>
+ <div id="news">
+   <h1>News</h1>
+   <hr id="welcome">
+     <h2>Welcome to PyCity website!</h2>
+     <h5>Published on 17th March 2020</h5>
+     <h3>Welcome to the pycity website! Here you will see updates,news and
+        downloads.</h3>
+     <img src="images/pycity.png">
+     <hr id ="welcome">
+     <h2>Services,terrain edit,bridge,tax rate,taxes
+       <h5>Published on 28th May 2020</h5>
+       <h3>Added fire police stations, hospital, city hall, prison,water,sand, forest lake,<br>mountains and
+         asphalt in terrain edit mode, added taxes and tax rate and free diffculty and varius bug fixes<h5>
+          <img src="images/up2.png">
+     <br>
+     <br>
+   </div>
+      <br>
+      <hr>
+ <br>
+ <br>
+<div id="how">
+  <h1>How to play?</h1>
+  <h2>Starting game</h2>
+  <h3>First to start game you need pygame (look in downloads).
+    <br> When you have pygame installed you can run the pycity.py file:</h3>
+    <h3>In linux terminal locate to src folder and run: $ python3 pycity.py</h3>
+    <h3>In windows you just run the pycity.py file by double clicking it</h3>
+    <h3>The black window should appear and the cmd window too. Then type info (size of the map, city name, difficulty) in the cmd window.
+      <br> Dont worry if game window says not responding when you enter information
+    it will respond again. When game window appears you can minimize cmd window(terminal in linux).
+  </h3>
+  <br>
+  <img src="images/info.png">
+  <hr id="hr">
+  <h2>Building</h2>
+  <h3>To start building hover with your mouse cursor over green square where you want to build and press one of the following keys:</h3>
+<br>
+    <ul>
+      <li>R - build rezidential zone</li>
+      <li>C - build comertial zone</li>
+      <li>I - build industrial zone</li>
+      <li>O - Build road</li>
+      <li>P - build park</li>
+      <li>T - build city hall</li>
+      <li>S - build prison</li>
+      <li>L - build police station</li>
+      <li>F - build fire station</li>
+      <li>H - build hospital</li>
+      <li>A - build asphalt (in edit mode)</li>
+      <li>F - build forest (in edit mode)</li>
+      <li>L - build lake (in edit mode)</li>
+      <li>M - build mounatins (in edit mode)</li>
+      <li>W - build water (in edit mode)</li>
+      <li>S - build sand (in edit mode)</li>
+    </ul>
+    <br>
+<img src="images/building.png">
+<br>
+    <h2>Erasing buildings</h2>
+      <h3>If you want to erase a building hover with your mouse cursor above it and press E</h3>
+<img src="images/erasing.png">
+<br>
+<br>
+<hr id="hr">
+<h2>Terrain edit</h2>
+<h3>To enable edit mode press up arrow on keyboard and down arrow to disable</h3>
+<h3>The edit mode text show if terrain edit is on or off</h3>
+<h3>Edit mode enables you to edit map terrain</h3>
+
+
+    <hr id="hr">
+    <h2>Game mehanics</h2>
+    <h3>Land value mehanics</h3>
+    <h3>Building parks increases land value:
+      <br>with 0 parks building rezidential zones will build normal houses,<br>with 1 park building rezidential zone will build bigger homes and with 2 and 3 parks building rezidential zone will build a building</h3>
+      <h3>Building rezidential zones also decreases land value so if you build a lot of rezidential zones you could decrease from<br> a building to a normal house so if you again want to build buildings then you first need to build more parks</h3>
+      <hr id="hr">
+
+
+    <h3>Citien's demands</h3>
+    <h3>Demands based on square colors(under the money and population)</h3>
+    <ul>
+      <li>Blue - comercial zone</li>
+      <li>Light blue - police station</li>
+      <li>Red - fire station</li>
+      <li>White - hospital</li>
+      <li>Gray - prison</li>
+      <li>Brown - industrial zone</li>
+    </ul>
+    <h3>Demand rules</h3>
+    <h3>10 rezidential zones need 1 comertial zone</h3>
+    <h3>1 comertial zone needs 1 industrial zone</h3>
+    <h3>20 rezidential zones need 1 police and fire station</h3>
+    <h3>50000 population needs 1 hospital</h3>
+    <h3>5 police stations need 1 prison</h3>
+    <hr id="hr">
+    <h3>Taxes and tax rate</h3>
+    <h3>Player gets tax revenue every 100 seconds</h3>
+    <h3>Tax rate is calculated by: number of rezidential,comercial,industrial × tax rate × 1000</h3>
+    <h3>Tax rate ranges from 0% to 20%</h3>
+    <h3>To increase tax rate you need to build city hall and then the tax rate text should appear on the right<br>press left arrow on keyboard to decraese tax rate, right to increase</h3>
+
+
+
+
+      </div>
+      <br>
+      <br>
+  <hr>
+ <div id="downloads">
+   <h1>Downloads</h1>
+   <h3>To download the game click the link bellow</h3>
+   <a href="https://www.github.com/leodev12345/PyCity-Simulation" target="_blank">Download</a>
+   <br>
+   <br>
+   <hr id="hr">
+   <h3>When you click the link you will be redirected to GitHub webpage. To download the game click the green button on the right 'clone or download' and then clone repository with git or click on download zip</h3>
+<img src="images/download.png" id="pycitydownload">
+   <h3>When you have the folder downloaded you will need to install pygame python libary</h3>
+ <h3>To install pygame open cmd on windows and type 'pip install pygame' or on linux $ pip3 install pygame</h3>
+ <h3>For more info on installing pygame click <a id="moreinfo" href="https://www.pygame.org/wiki/GettingStarted" target="_blank">here</a></h3>
+   <br>
+   <br>
+  </div>
+      <hr id="full"><h6 id="made">Bug reports and your game ideas send at <a id="by" href="mailto:pycityproject@gmail.com">pycityproject@gmail.com</a></h6>
+      <h6 id="made">Get the lastest updated at: <a id="by" href="https://www.pygame.org/project/4740/" target="_blank">https://www.pygame.org/project/4740/</a></h6>
+      <h6 id="made"><a id="by" href="https://www.youtube.com/channel/UCcaa30QRpntD4huideQsISg" target="_blank">PyCity youtube cannel</a></h6>
+      <h6 id="made">Made by <a id="by" href="https://www.github.com/leodev12345" target="_blank">The Leo Developer</a></h6>
+</body>
+</html>
